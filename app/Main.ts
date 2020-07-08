@@ -19,12 +19,11 @@
 
   limitations under the License.​
 */
-import ApplicationBase from 'ApplicationBase/ApplicationBase';
-import i18n = require('dojo/i18n!./nls/resources');
 
 const CSS = {
   loading: "configurable-application--loading"
 };
+import ApplicationBase from 'ApplicationBase/ApplicationBase';
 
 import {
   createMapFromItem,
@@ -67,6 +66,7 @@ class MapExample {
   //--------------------------------------------------------------------------
 
   public init(base: ApplicationBase): void {
+    console.log("Base", base);
     if (!base) {
       console.error("ApplicationBase is not defined");
       return;

@@ -21,13 +21,11 @@
 */
 
 (() => {
-  const { pathname, search } = window.location;
+  const { pathname } = window.location;
   const distPath = pathname.substring(0, pathname.lastIndexOf("/"));
-  const localeUrlParamRegex = /locale=([\w-]+)/;
-  const dojoLocale = search.match(localeUrlParamRegex) ? RegExp.$1 : undefined;
+
   const config = {
     async: true,
-    locale: dojoLocale,
     packages: [
       {
         name: "Application",

@@ -20,12 +20,12 @@
   limitations under the License.​
 */
 
-import applicationBaseConfig = require("dojo/text!config/applicationBase.json");
-import applicationConfig = require("dojo/text!config/application.json");
+import applicationBaseConfig from "dojo/text!config/applicationBase.json";
+import applicationConfig from "dojo/text!config/application.json";
 
 import ApplicationBase from 'ApplicationBase/ApplicationBase';
-import i18n = require('dojo/i18n!./nls/resources');
-import Application = require("./Main");
+import i18n from 'dojo/i18n!./nls/resources';
+import Application from "./Main";
 
 const Main = new Application();
 

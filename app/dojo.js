@@ -20,13 +20,10 @@
   limitations under the License.​
 */
 (function () {
-    var _a = window.location, pathname = _a.pathname, search = _a.search;
+    var pathname = window.location.pathname;
     var distPath = pathname.substring(0, pathname.lastIndexOf("/"));
-    var localeUrlParamRegex = /locale=([\w-]+)/;
-    var dojoLocale = search.match(localeUrlParamRegex) ? RegExp.$1 : undefined;
     var config = {
         async: true,
-        locale: dojoLocale,
         packages: [
             {
                 name: "Application",
