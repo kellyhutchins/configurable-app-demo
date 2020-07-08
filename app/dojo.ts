@@ -23,11 +23,8 @@
 (() => {
   const { pathname, search } = window.location;
   const distPath = pathname.substring(0, pathname.lastIndexOf("/"));
-  const appPath = distPath.slice(0, distPath.lastIndexOf("/"));
-  const templateAppPath = appPath.slice(0, appPath.lastIndexOf("/"));
   const localeUrlParamRegex = /locale=([\w-]+)/;
   const dojoLocale = search.match(localeUrlParamRegex) ? RegExp.$1 : undefined;
-
   const config = {
     async: true,
     locale: dojoLocale,
@@ -39,14 +36,10 @@
       },
       {
         name: 'ApplicationBase',
-        location: `${distPath}/app/application-base-js`,
+        location: `${distPath}/node_modules/@esri/application-base-js`,
         main: 'ApplicationBase'
       },
-      {
-        name: "TemplateApplicationBase",
-        location: `${templateAppPath}/node_modules/@esri/application-base-js`,
-        main: "ApplicationBase"
-      },
+
       {
         name: "config",
         location: `${distPath}/config`

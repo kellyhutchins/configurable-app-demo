@@ -19,10 +19,8 @@
 
   limitations under the License.​
 */
-
-import ApplicationBase from "./application-base-js/ApplicationBase";
-
-import i18n = require("dojo/i18n!./nls/resources");
+import ApplicationBase from 'ApplicationBase/ApplicationBase';
+import i18n = require('dojo/i18n!./nls/resources');
 
 const CSS = {
   loading: "configurable-application--loading"
@@ -35,13 +33,13 @@ import {
   getItemTitle,
   findQuery,
   goToMarker
-} from "./application-base-js/support/itemUtils";
+} from "ApplicationBase/support/itemUtils";
 
 import {
   setPageLocale,
   setPageDirection,
   setPageTitle
-} from "./application-base-js/support/domHelper";
+} from "ApplicationBase/support/domHelper";
 import Handles from "esri/core/Handles";
 
 import ConfigurationSettings from "./ConfigurationSettings";

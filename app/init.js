@@ -19,13 +19,10 @@
 
   limitations under the License.​
 */
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-define(["require", "exports", "dojo/text!config/applicationBase.json", "dojo/text!config/application.json", "dojo/i18n!./nls/resources", "./application-base-js/ApplicationBase", "./Main"], function (require, exports, applicationBaseConfig, applicationConfig, i18n, ApplicationBase_1, Application) {
+define(["require", "exports", "tslib", "dojo/text!config/applicationBase.json", "dojo/text!config/application.json", "ApplicationBase/ApplicationBase", "dojo/i18n!./nls/resources", "./Main"], function (require, exports, tslib_1, applicationBaseConfig, applicationConfig, ApplicationBase_1, i18n, Application) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    ApplicationBase_1 = __importDefault(ApplicationBase_1);
+    ApplicationBase_1 = tslib_1.__importDefault(ApplicationBase_1);
     var Main = new Application();
     new ApplicationBase_1.default({
         config: applicationConfig,

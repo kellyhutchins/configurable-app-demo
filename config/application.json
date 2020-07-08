@@ -7,7 +7,7 @@
   "basemap": true,
   "webscene": "",
   "portalUrl": "https://www.arcgis.com",
-  "oauthappid": "",
+  "oauthappid": "arcgisWebApps",
   "proxyUrl": "",
   "units": "",
   "helperServices": {

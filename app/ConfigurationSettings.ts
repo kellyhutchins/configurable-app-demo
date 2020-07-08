@@ -4,13 +4,11 @@ import {
     subclass
 } from "esri/core/accessorSupport/decorators";
 
-/// <amd-dependency path="esri/core/tsSupport/declareExtendsHelper" name="__extends" />
-/// <amd-dependency path="esri/core/tsSupport/decorateHelper" name="__decorate" />
 import Accessor from "esri/core/Accessor";
-import { ApplicationConfig } from "./application-base-js/interfaces";
+import { ApplicationConfig } from "ApplicationBase/interfaces";
 
 @subclass("app.ConfigurationSettings")
-class ConfigurationSettings extends declared(Accessor) {
+class ConfigurationSettings extends (Accessor) {
     @property()
     webmap: string;
 

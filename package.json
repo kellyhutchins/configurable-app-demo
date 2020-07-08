@@ -33,10 +33,11 @@
     "start": "npm-run-all --parallel watch:sass watch:ts",
     "watch:ts": "tsc --watch",
     "build:ts": "tsc",
-    "copy:node_modules": "cpx './node_modules/@esri/**/*' ./app/@esri",
-    "build:sass": "node-sass css/index.scss css/index.css",
-    "watch:sass": "node-sass --watch css/index.scss css/index.css",
+    "build:sass": "node-sass styles/main.scss styles/main.css",
+    "watch:sass": "node-sass --watch styles/main.scss styles/main.css",
     "deploy": "npm run build:sass & npm run build:ts"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@esri/application-base-js": "0.0.12"
+  }
 }

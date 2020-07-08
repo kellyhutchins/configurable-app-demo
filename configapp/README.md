@@ -1,2 +1,0 @@
-# khutchins-esri.com
-ConfigurableAppDemo

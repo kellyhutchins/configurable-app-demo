@@ -22,9 +22,9 @@
 
 import applicationBaseConfig = require("dojo/text!config/applicationBase.json");
 import applicationConfig = require("dojo/text!config/application.json");
-import i18n = require("dojo/i18n!./nls/resources");
-import ApplicationBase from "./application-base-js/ApplicationBase";
 
+import ApplicationBase from 'ApplicationBase/ApplicationBase';
+import i18n = require('dojo/i18n!./nls/resources');
 import Application = require("./Main");
 
 const Main = new Application();
